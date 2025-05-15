@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maintenance Mode</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body,
+      html {
+        height: 100%;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #1e293b, #0f172a);
+        color: #f8fafc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+      .maintenance-container {
+        max-width: 600px;
+        padding: 2rem;
+        background-color: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 16px;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+      }
+
+      .maintenance-container h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+
+      .maintenance-container p {
+        font-size: 1.2rem;
+        color: #cbd5e1;
+      }
+
+      .maintenance-icon {
+        font-size: 5rem;
+        margin-bottom: 1rem;
+        color: #38bdf8;
+      }
+
+      @media (max-width: 480px) {
+        .maintenance-container h1 {
+          font-size: 2rem;
+        }
+
+        .maintenance-icon {
+          font-size: 3rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="maintenance-container">
+      <div class="maintenance-icon">🚧</div>
+      <h1>We're Under Maintenance</h1>
+      <p>
+        Our website is currently undergoing scheduled maintenance.<br />
+        We’ll be back shortly. Thank you for your patience!
+      </p>
+    </div>
+  </body>
+</html>
